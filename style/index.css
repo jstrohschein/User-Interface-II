@@ -51,8 +51,9 @@ table {
 	border: 2px solid blue;
 	display: flex;
 	width: 100%;
-	height: 100%;
-	justify-content: center;	
+  height: 100%;
+  flex-direction: column;
+	align-items: center;	
 
 }
 .container-1 {
@@ -73,7 +74,14 @@ font-family: rockwell;
 
 .buttons nav {
 	display: flex;
-	background-color: black;
-	width: auto;
-	justify-content: center;
+	width: 200px;
+	justify-content: space-between;
+}
+
+#introduction {
+  border: 2px solid green;
+  font-size: 18px;
+  font-family: bodini MT;
+  display: block;
+  width: 800px;
 }
