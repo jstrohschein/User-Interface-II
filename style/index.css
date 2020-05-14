@@ -47,13 +47,15 @@ table {
 	border-spacing: 0;
 }
 
+
+
 body {
   background: #151519;
 }
 .container {
 	display: flex;
 	width: 100%;
-  height: 100%;
+  height: 50%;
   flex-direction: column;
 	align-items: center;	
 
@@ -148,3 +150,36 @@ button:hover:after {
   transform: .7s;
 }
 
+figcaption {
+  color: white;
+  text-align: center;
+  font-family: bodini MT;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.gallery-container {
+  display: flex;
+  padding: 50px;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gallery-1 {
+  display: flex;
+  padding: 15px;
+  height: 25%;
+  width: 75%;
+  justify-content: space-evenly;
+}
+
+.gallery-2 {
+  display: flex;
+  padding: 15px;
+  height: 25%;
+  width: 75%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
