@@ -59,6 +59,7 @@ body {
   background: #151519;
 }
 .container {
+  margin: 0 auto;
 	display: flex;
 	width: 100%;
   height: 50%;
@@ -68,10 +69,9 @@ body {
 }
 .container-1 {
 display: flex;
-width: 400px;
+width: 50%;
 height: 200px;
-font-size: 42px;
-margin: 50px;
+font-size: 3.6rem;
 align-items: center;
 flex-direction: column;
 justify-content: space-around;
@@ -89,11 +89,12 @@ color: white;
 }
 
 #introduction {
-  font-size: 18px;
+  font-size: 1.4rem;
   color: white;
-  font-family: bodini MT;
+  font-family: helvetica;
   display: block;
-  width: 800px;
+  width: 50%;
+  padding-top: 25px;
 }
 
 button {
@@ -160,7 +161,7 @@ figcaption {
   color: white;
   text-align: center;
   font-family: bodini MT;
-  font-size: 18px;
+  font-size: 1.4rem;
   padding: 3px;
 }
 
@@ -200,6 +201,48 @@ figcaption {
   color: white;
 }
 
+@media (max-width: 800px) {
+
+  .container-1 {
+    width: 100%;
+  }
+
+  .gallery-1 {
+    flex-wrap: wrap;
+  }
+
+  .gallery-2 {
+    flex-wrap: wrap;
+  }
+
+  #introduction {
+    flex-wrap: wrap;
+  }
+
+  img {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .social {
+    width: 100%;
+  }
+}
 @media (max-width: 500px) {
+
+  .buttons nav {
+    width: 100%;
+  }
+
+  .headings {
+    font-size: 2.8rem;
+  }
+
+  #introduction {
+    font-size: 1.2rem;
+  }
+
+  
   
 }
