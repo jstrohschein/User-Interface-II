@@ -47,7 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
 
+/** {
+  outline: 1px solid cyan;
+}*/
 
 body {
   background: #151519;
@@ -182,4 +188,14 @@ figcaption {
   width: 75%;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 30%;
+  width: 50%;
+  justify-content: space-evenly;
+  color: white;
 }
