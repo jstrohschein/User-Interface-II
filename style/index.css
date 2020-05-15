@@ -1,1 +1,185 @@
-/* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+body {
+  background: #151519;
+}
+.container {
+	display: flex;
+	width: 100%;
+  height: 50%;
+  flex-direction: column;
+	align-items: center;	
+
+}
+.container-1 {
+display: flex;
+width: 400px;
+height: 200px;
+font-size: 42px;
+margin: 50px;
+align-items: center;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.headings {
+font-family: rockwell;
+color: white;
+}
+
+.buttons nav {
+	display: flex;
+	width: 400px;
+	justify-content: space-between;
+}
+
+#introduction {
+  font-size: 18px;
+  color: white;
+  font-family: bodini MT;
+  display: block;
+  width: 800px;
+}
+
+button {
+  background: none;
+  color: #ccc;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  color: white;
+  border-radius: 4px;
+  transition: .6s;
+  overflow: hidden;
+}
+
+button {
+  outline: none;
+}
+
+button:before {
+  content: '';
+  background: rgb(255, 255, 255);
+  width: 60px;
+  height: 10%;
+  left: 0;
+  top: 0;
+  opacity: .5s;
+  filter: blur(30px);
+  transform: translate(-130px) skew(-15deg);
+}
+
+button:after {
+  content: '';
+  background: rgb(255, 255, 255);
+  width: 30px;
+  height: 100%;
+  left: 30px;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) skew(-15deg);
+}
+
+button:hover {
+  background: #568bec;
+  cursor: pointer;
+}
+
+button:hover:before {
+  transform: translate(300px) skew(-15deg);
+  opacity: .6s;
+  transform: .7s;
+}
+
+button:hover:after {
+  transform: translate(300px) skew(-15deg);
+  opacity: 1;
+  transform: .7s;
+}
+
+figcaption {
+  color: white;
+  text-align: center;
+  font-family: bodini MT;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.gallery-container {
+  display: flex;
+  padding: 50px;
+  width: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.gallery-1 {
+  display: flex;
+  padding: 15px;
+  height: 25%;
+  width: 75%;
+  justify-content: space-evenly;
+}
+
+.gallery-2 {
+  display: flex;
+  padding: 15px;
+  height: 25%;
+  width: 75%;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
